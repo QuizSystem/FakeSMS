@@ -11,7 +11,6 @@ import UIKit
 class FriendTableViewCell: UITableViewCell {
     
     static let identifier = "FriendTableViewCell"
-    var closeKeyboard: ((Void) -> Void)?
 
     @IBOutlet weak var label: UILabel!
 
@@ -28,10 +27,6 @@ class FriendTableViewCell: UITableViewCell {
 
     func update(_ value: String) {
         label.text = value
-    }
-    
-    @IBAction func endKeyboardButtonPush(_ sender: Any) {
-        closeKeyboard?()
     }
     
 }
